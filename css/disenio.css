@@ -96,8 +96,9 @@
     }
     
     .header .txt {
-        width: 90%;
+        width: calc( 100% - 100px);
         display: flex;
+        margin:0 auto;
         justify-content: center;
         align-items: center;
     }
@@ -160,6 +161,7 @@
         background: linear-gradient(26deg, rgba(6, 6, 144, 0.6), rgba(18, 204, 43, 0.6));
         backdrop-filter: blur(0.2px);
         text-align: center;
+        overflow:scroll;
     }
     
     .tarjeta img {
@@ -196,23 +198,3 @@
         border: none;
     }
     /*termino del codigo tarjetas*/
-    /* comienzo de medias querys 
-    
-    @media screen and (max-width:800px) {
-        .switch {
-            width: calc(100% - 85%);
-        }
-    }
-    
-    @media screen and (max-width:540px) {
-        .switch {
-            width: calc(100% - 82%);
-        }
-    }
-    
-    @media screen and (max-width:424px) {
-        .switch {
-            width: calc(100% - 80%);
-        }
-    }
-     fin de las medias querys*/
