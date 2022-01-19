@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.contenedor {
+    background: #e6ebeb;
+    display: absolute;
+    margin: 0 auto;
+    padding: 22px 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(../img/fon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    background: #474747;
+    height: 58px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    box-shadow: 0px 0px 12px 3px rgba(36, 35, 35, 0.322);
+    border-radius: 20px 20px 0 0;
+}
+
+.header h1 {
+    color: #FAFAFA;
+}
+
+.contenido {
+    /* background: #45656628;*/
+    background: #e6ebeb;
+    box-shadow: 0px 0px 12px 3px rgba(36, 35, 35, 0.322);
+    width: 90%;
+    height: calc(100% - 58px - 43px - 40px);
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(23, 23, 90, 0.322);
+    border-radius: 44px;
+}
+
+.tarjeta {
+    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 20px;
+    width: calc(100% - 10%);
+}
+
+#one {
+    height: 400px;
+    background: rgb(86, 4, 219);
+}
+
+#two {
+    height: 400px;
+    background: rgb(126, 219, 4);
+}
+
+#tres {
+    height: 400px;
+    background: rgb(4, 97, 219);
+}
+
+.tarjeta button {
+    width: 90%;
+    height: 90%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.tarjeta button img {
+    width: 140px;
+    height: 140px;
+}
+
+.tarjeta button h1 {
+    color: #ffffff;
+}
+
+.footer {
+    background: #335E4F;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    height: 43px;
+    width: 90%;
+    box-shadow: 0px 0px 12px 3px rgba(36, 35, 35, 0.322);
+    border-radius: 0 0 20px 20px;
+}
+
+.footer h1 {
+    color: #F0FFF6;
+    font-size: 17px;
+}
+
+@media screen and(max-width:1290px) {
+    .contenido {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    .tarjeta {
+        width: 90%;
+    }
+}

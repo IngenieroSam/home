@@ -1,0 +1,218 @@
+    * {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: transparent;
+    }
+    /* Comienzo del metodo dark*/
+    
+    body.dark {
+        background: #232324;
+        transition: background 3s;
+    }
+    
+    .switch {
+        width: 100px;
+        cursor: pointer;
+    }
+    
+    .switch__toggle {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: left 600ms;
+        margin: 0 auto;
+        animation: rotate 3s infinite alternate-reverse;
+    }
+    
+    .switch__toggle img {
+        width: 40%;
+        vertical-align: middle;
+    }
+    
+    body.dark .container {
+        background: #232324;
+        transition: background 3s;
+    }
+    
+    body.dark .container .header {
+        background: #e6ebeb;
+        box-shadow: 0px 0px 12px 3px rgba(250, 249, 249, 0.56);
+        transition: background 3s;
+    }
+    
+    body.dark .container .header h1 {
+        color: #4e4e4e;
+        transition: background 3s;
+    }
+    
+    body.dark .container .contenido {
+        background: #1d1f1f;
+        box-shadow: 0px 0px 12px 3px rgba(250, 249, 249, 0.56);
+        transition: background 3s;
+    }
+    
+    body.dark .container .switch__toggle {
+        left: auto;
+    }
+    /* codigo para darle movimiento/animacion a un objeto*/
+    
+    @keyframes rotate {
+        from {
+            transform: rotate(100deg);
+        }
+        to {
+            transform: rotate(45deg);
+        }
+    }
+    /*aquí termina el metodo dark*/
+    
+    .container {
+        background: #e6ebeb;
+        display: absolute;
+        margin: 0 auto;
+        padding: 22px 0;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transition: background 3s;
+    }
+    
+    .header {
+        background: #474747;
+        height: 58px;
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        box-shadow: 0px 0px 12px 3px rgba(36, 35, 35, 0.322);
+        border-radius: 20px 20px 0 0;
+        transition: background 3s;
+    }
+    
+    .header .txt {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .header .txt h1 {
+        color: #FAFAFA;
+        transition: background 3s;
+    }
+    
+    .contenido {
+        /* background: #45656628;*/
+        background: #e6ebeb;
+        box-shadow: 0px 0px 12px 3px rgba(36, 35, 35, 0.322);
+        width: 90%;
+        height: calc(100% - 58px - 40px);
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        overflow: scroll;
+        border-radius: 0 0 20px 20px;
+        transition: background 3s;
+    }
+    /* comienzo del codigo de scrollbar personalizado */
+    
+     ::-webkit-scrollbar {
+        width: 2px;
+        height: 2px;
+        background: transparent;
+        color: transparent;
+        border: 0 solid transparent;
+    }
+    
+     ::-webkit-scrollbar-thumb {
+        background-color: rgb(67, 184, 219);
+        border-radius: 44px;
+        color: transparent;
+        border: 0 solid transparent;
+    }
+    
+     ::-webkit-scrollbar-corner {
+        background: transparent;
+        color: transparent;
+    }
+    /*fin del codigo scrollbar*/
+    /* comienza codigo de las tarjetas -contenido de los cursos- (links)*/
+    
+    .tarjeta {
+        margin: 20px auto;
+        border-radius: 20px;
+        width: calc(100% - 10%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 90%;
+        background: linear-gradient(26deg, rgba(6, 6, 144, 0.6), rgba(18, 204, 43, 0.6));
+        backdrop-filter: blur(0.2px);
+        text-align: center;
+    }
+    
+    .tarjeta img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    
+    .tarjeta h1 {
+        color: #ffffff;
+        font-size: 30px;
+    }
+    
+    .tarjeta h2 {
+        color: #ffffff;
+    }
+    
+    .tarjeta span {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .tarjeta span img {
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+    }
+    
+    .spans {
+        float: left;
+    }
+    
+    .spans button {
+        border: none;
+    }
+    /*termino del codigo tarjetas*/
+    /* comienzo de medias querys 
+    
+    @media screen and (max-width:800px) {
+        .switch {
+            width: calc(100% - 85%);
+        }
+    }
+    
+    @media screen and (max-width:540px) {
+        .switch {
+            width: calc(100% - 82%);
+        }
+    }
+    
+    @media screen and (max-width:424px) {
+        .switch {
+            width: calc(100% - 80%);
+        }
+    }
+     fin de las medias querys*/
